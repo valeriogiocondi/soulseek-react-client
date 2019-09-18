@@ -1,0 +1,67 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+@import './fonts/OpenSans.css';
+
+@backgroundColor-1: #FFF;
+@backgroundColor-2: #444;
+@backgroundColor-3: #222;
+@backgroundColor-4: #000;
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	text-align: center;
+	overflow-y: scroll;
+	cursor: default;
+}
+
+.input-text,
+.input-email,
+.input-tel,
+.input-password 
+{
+	width: 180px;
+	padding: 3px 10px;
+	/*width: 160px;*/
+	color: #B1B3B4;
+	background-color: #FFF;
+	/*border: solid 1px #87888A;*/
+	border: none;
+	border-bottom: solid 1px #CCC;
+	overflow: hidden;
+}
+.input-text input[type="text"], 
+.input-email input[type="email"], 
+.input-tel input[type="tel"], 
+.input-password input[type="password"] 
+{
+	width: 100%;
+	padding: 10px 0px;
+	background-color: #FFF !important;
+	/*width: calc(100% - 20px);*/
+	/*padding: 2.5px 5px 4px 5px;*/
+	border: 0;
+	font-size: 14px;
+	text-align: left;
+}
+.input-text input[type="text"]:active, 
+.input-email input[type="email"]:active, 
+.input-tel input[type="tel"]:active, 
+.input-password input[type="password"]:active {
+	border: none;
+	box-shadow: none;
+	background-color: #FFF;
+}
+.input-email input {
+	text-transform: lowercase;
+}
+
+
+button:not(.btn-link) {
+	background-color: @backgroundColor-2 !important;
+
+	&:hover {
+		background-color: @backgroundColor-4 !important;
+	}
+}

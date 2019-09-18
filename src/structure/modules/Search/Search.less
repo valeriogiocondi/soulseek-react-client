@@ -1,0 +1,57 @@
+@import '../../assets/styles/reset.less';
+
+#search {
+
+	.table {
+
+		thead {
+
+			th {
+				padding: 17px 0px;
+				font-size: 14px;
+			}
+		}
+
+		tbody {
+
+			tr {
+
+				td {
+					font-size: 14px;
+					overflow: hidden;
+
+					div {
+						margin-top: 5px;
+					}
+				}
+				td.user {
+					max-width: 200px;
+				}
+				td.slots {
+					font-weight: 700;
+					color: #AAA;
+				}
+				td.name {
+					max-width: 400px;
+					font-weight: 600;
+					color: #777;
+				}
+				button {
+					font-size: 12px;
+				}
+			}
+
+			tr:hover {
+
+				td {
+					background-color: #F5F5F5;
+
+					transition: all 0.3s linear;
+					-moz-transition: all 0.3s linear;
+					-o-transition: all 0.3s linear;
+					-webkit-transition: all 0.3s linear;
+				}
+			}
+		}
+	}
+}
